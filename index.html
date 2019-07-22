@@ -14,22 +14,36 @@
 </head>
 <body>
 
-  <div class="container">
-    <div class="weather-box">
-      <div class="row1">
-        <h2 class="weather-location"></h2>
+  <div id="container">
 
+
+    <div class="weather-box">
+
+      <div class="form-container">
+         <form id="search-form">
+           <input type="text" name="location" placeholder="City" id="location">
+           <input type="submit" name="submit" value="Submit">
+         </form>
+       </div>
+
+
+      <div class="row1">
+        <h1 class="weather-location">Sylhet</h1>
       </div>
+
       <div class="row2">
-        <h1 class="temp"></h1>
-        <span class="temp-type">°C</span>
+        <h2 class="temp">Hot</h2>
+        <div class="temp-section">
+          <p class="temp-type">34</p>
+          <span>°C</span>
+        </div>
       </div>
-      <h2 class="weather-description"></h2>
+
+      <h2 class="weather-description">fjdljfa</h2>
     </div>
   </div>
 
-  <script src="./assets/js/skycons.js"></script>
-  <script src="./assets/js/jquery-3.2.1.min.js"></script>
-  <script src="./assets/js/main.js"></script>
+
+  <script src="./assets/app.js"></script>
 </body>
 </html>

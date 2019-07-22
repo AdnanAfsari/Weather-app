@@ -2,19 +2,14 @@
     padding: 0px;
     margin: 0px;
 }
-.container{
-
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#311847), to(#3EB9E6));
-    background-image: -webkit-linear-gradient(top, #311847, #3EB9E6);
-    background-image: -moz-linear-gradient(top, #311847, #3EB9E6);
-    background-image: linear-gradient(to bottom, #311847, #3EB9E6);
+#container {
+  background-color: #212121;
+	background-repeat: no-repeat;
+	background-size: cover;
+  height: 100vh;
 }
-.weather-box{
 
+.weather-box{
     height: 100%;
     width: 100%;
     display: flex;
@@ -25,31 +20,35 @@
     font-family: 'Abel', sans-serif;
     animation-name: introduction;
     animation-duration: 2s;
-
-
 }
+
 .row1{
     width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid white;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 .weather-location{
     color: white;
-    font-size: 50px;
+    font-size: 80px;
 }
 
-.weather-icon {
-    width: 100px;
 
-}
 .row2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+    text-align: center;
+}
+
+.temp-section {
+  display: flex;
+  align-items: center;
+}
+
+.temp-section {
+  font-size: 80px;
+  color: #3EB9E6;
+  cursor: pointer;
 }
 .row2:hover .temp{
     color: #41A5CF;
@@ -59,8 +58,7 @@
 }
 .temp{
     color: white;
-    font-size: 80px;
-    cursor: pointer;
+    font-size: 50px;
     pointer-events: auto;
     transition: color 1s;
 }
@@ -74,12 +72,33 @@
     text-align: center;
     color: white;
 }
-.weather-days{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 50px;
-    color: white;
-    font-size: 20px;
 
-    width: 50%;
+
+.form-container {
+	text-align: center;
+}
+
+form input {
+	margin-top: 15%;
+	padding: 15px;
+	border: none;
+	font-size: 1.2em;
+	border-radius: 3px;
+
+}
+
+form input[type=submit] {
+	background: green;
+	color: #fff;
+
+}
+
+.rainyday {
+	background-image: url('https://media.giphy.com/media/1225Tuw5X5By5W/giphy.gif');
+}
+.clearday {
+	background-image: url('https://media.giphy.com/media/ruknycEXRhOs8/giphy.gif');
+}
+.cloudyday {
+	background-image: url('https://media.giphy.com/media/aQ7kognlRPDzi/giphy.gif');
 }
