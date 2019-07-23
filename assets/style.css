@@ -1,0 +1,104 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#container {
+  background-color: #212121;
+	background-repeat: no-repeat;
+	background-size: cover;
+  height: 100vh;
+}
+
+.weather-box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: 'Abel', sans-serif;
+    animation-name: introduction;
+    animation-duration: 2s;
+}
+
+.row1{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+.weather-location{
+    color: white;
+    font-size: 80px;
+}
+
+
+.row2{
+    text-align: center;
+}
+
+.temp-section {
+  display: flex;
+  align-items: center;
+}
+
+.temp-section {
+  font-size: 80px;
+  color: #3EB9E6;
+  cursor: pointer;
+}
+.row2:hover .temp{
+    color: #41A5CF;
+}
+.row2:hover .temp-type{
+    color: white;
+}
+.temp{
+    color: white;
+    font-size: 50px;
+    pointer-events: auto;
+    transition: color 1s;
+}
+.temp-type{
+    color: #3EB9E6;
+    font-size: 80px;
+    cursor: pointer;
+    transition: color 1s;
+}
+.weather-description{
+    text-align: center;
+    color: white;
+}
+
+
+.form-container {
+	text-align: center;
+}
+
+form input {
+	margin-top: 15%;
+	padding: 15px;
+	border: none;
+	font-size: 1.2em;
+	border-radius: 3px;
+
+}
+
+form input[type=submit] {
+	background: green;
+	color: #fff;
+
+}
+
+.rainyday {
+	background-image: url('https://media.giphy.com/media/1225Tuw5X5By5W/giphy.gif');
+}
+.clearday {
+	background-image: url('https://media.giphy.com/media/ruknycEXRhOs8/giphy.gif');
+}
+.cloudyday {
+	background-image: url('https://media.giphy.com/media/aQ7kognlRPDzi/giphy.gif');
+}
