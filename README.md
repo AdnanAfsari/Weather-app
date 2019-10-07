@@ -1,8 +1,9 @@
 # Weather-app
+A browser based weather application using the OpenWeather API
 
-## Author
+![Screenshot](weather_app.png "Screenshot")
 
-Adnan Afsari
+
 
 ## Technologies
 HTML
@@ -32,3 +33,7 @@ Npm (optional to use live-server)- npm install live-server
 #### To user with server
 
 **cd** into the project folder,` and start the server by doing `live-server` then it will open up `http://127.0.0.1:8080/` on your browser
+
+## Author
+
+[Adnan Afsari](https://github.com/AdnanAfsari)
